@@ -83,11 +83,9 @@
 	function draw(){
 		var canvas = document.getElementById("canvas");
 		var context = canvas.getContext("2d");
-		context.strokestyle = "red";
-		context.fillStyle = "black";
-		context.fillStyle = "rgba(0,0,255,0.5)";
-		context.fillRect(10,10,100,100);
-		context.strokeRect(10,10,100,100);
+		context.beginPath();
+		context.arc(50,50,30,0,Math.PI*2, true);
+		context.closePath();
 	}
 </script>
 </head>
