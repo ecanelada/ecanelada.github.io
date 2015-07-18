@@ -1,2 +1,3 @@
 <?php
 	echo "prueba php";
+?>
